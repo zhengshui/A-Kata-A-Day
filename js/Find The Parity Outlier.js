@@ -12,17 +12,18 @@ integer N. Write a method that takes the array as an argument and returns N.
     Should return: 160
  **/
 
-function findOutlier(integers){
-    var a =[],b =[];
-    integers.map(function(val){
+function findOutlier(integers) {
+    var a =[],
+        b =[];
+    integers.map(function(val) {
         val % 2 === 0 ? a.push(val) : b.push(val);
     });
-    return a.length === 1 ? a[0] : b[0]
+    return a.length === 1 ? a[0] : b[0];
 }
 
 // other
-function findOutlier(int){
-    var even = int.filter(a=>a%2==0);
-    var odd = int.filter(a=>a%2!==0);
+function findOutlier(int) {
+    let even = int.filter( a=>a%2==0 );
+    let odd = int.filter(a=>a%2!==0);
     return even.length==1? even[0] : odd[0];
 }

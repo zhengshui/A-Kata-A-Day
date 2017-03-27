@@ -14,8 +14,8 @@ function unique(arr) {
   return arr;
 }
 function longest(s1, s2) {
-var s3 = s1 + s2;
-  return unique(s3.split("").sort()).join("");
+    var s3 = s1 + s2;
+    return unique(s3.split('').sort()).join('');
 }
 
 // 别人：
